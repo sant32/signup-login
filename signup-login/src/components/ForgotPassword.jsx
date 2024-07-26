@@ -11,7 +11,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:3000/forgot-password', { email });
+      await axios.post('https://signup-login-server.onrender.com/forgot-password', { email });
       toast.success('Password reset link sent to your email');
       // No need to navigate here, the user will navigate from the email link
     } catch (error) {

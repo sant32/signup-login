@@ -20,7 +20,7 @@ const ResetPassword = () => {
     }
 
     try {
-      const response = await axios.post(`http://localhost:3000/reset-password/${token}`, { password });
+      const response = await axios.post(`https://signup-login-server.onrender.com/reset-password/${token}`, { password });
       if (response.status === 200) {
         toast.success('Password reset successfully');
         navigate('/login');

@@ -20,7 +20,7 @@ const LoginForm = () => {
 
   const onSubmit = async (data) => {
    try {
-     const response = await axios.post('http://localhost:3000/login',data)
+     const response = await axios.post('https://signup-login-server.onrender.com/login',data)
      console.log("data:", response);
      toast.success("Login successfully")
      // Handle login logic here

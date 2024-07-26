@@ -26,7 +26,7 @@ const SignupForm = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post('http://localhost:3000/signup', data)
+      const response = await axios.post('https://signup-login-server.onrender.com/signup', data)
       console.log(response)
       console.log(data);
     toast.success('SignUp successfull! Redirecting to login page..')
